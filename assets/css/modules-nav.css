@@ -1,0 +1,149 @@
+/* -----------------------------------
+Navigation
+----------------------------------- */
+
+#nav-toggle
+{
+	display: block;
+	padding: 0 20px;
+	color: #000;
+	border-bottom: 1px solid #fff;
+	background-image: url(../img/responsive-nav.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 40px;
+}
+
+#nav ul
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#nav li
+{
+	display: inline;
+	margin: 0;
+	padding: 0;
+	background: none;
+}
+
+#nav a
+{
+	display: block;
+	padding: 0 20px;
+	border-bottom: 1px solid #fff;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 40px;
+}
+
+#nav a:focus,#nav-toggle:focus
+{
+	color: #fff;
+	background-color: #000;
+}
+
+#nav a:hover,#nav-toggle:hover
+{
+	color: #000;
+	background-color: #949494;
+}
+
+#nav a:active,#nav-toggle:active
+{
+	color: #fff;
+	background-color: #646464;
+}
+
+#nav form
+{
+  float: right;
+	margin: 0 185px 0 0;
+	line-height: 60px;
+}
+
+/* current */
+.current { font-weight: 700; }
+#person #nav-themes { font-weight: 400; }
+#essay #nav-women { font-weight: 400; }
+#arc #nav-themes { font-weight: 400; }
+#arc #nav-women { font-weight: 400; }
+#pub #nav-themes { font-weight: 400; }
+#pub #nav-women { font-weight: 400; }
+#dobject #nav-themes { font-weight: 400; }
+#dobject #nav-women { font-weight: 400; }
+#more #nav-about { font-weight: 400; }
+#more #nav-more { font-weight: 700; }
+.browseDobject #nav-themes { font-weight: 400; }
+.browseDobject #nav-women { font-weight: 400; }
+.browseDobject #nav-occupations { font-weight: 400; }
+.browseEntitybyRepository #nav-themes { font-weight: 400; }
+.browseEntitybyRepository #nav-women { font-weight: 400; }
+.browseEntitybyRepository #nav-occupations { font-weight: 400; }
+.browseArcByRepository #nav-themes { font-weight: 400; }
+.browseArcByRepository #nav-women { font-weight: 400; }
+.browseArcByRepository #nav-occupations { font-weight: 400; }
+.browsePub #nav-themes { font-weight: 400; }
+.browsePub #nav-women { font-weight: 400; }
+.browsePub #nav-occupations { font-weight: 400; }
+.browseArc #nav-themes { font-weight: 400; }
+.browseArc #nav-women { font-weight: 400; }
+.browseArc #nav-occupations { font-weight: 400; }
+.functionlist #nav-about { font-weight: 400; }
+.functionlist #nav-themes { font-weight: 400; }
+.functionlist #nav-women { font-weight: 400; }
+.functionlist #nav-occupations { font-weight: 700; }
+.browseEntitybyFunction #nav-themes { font-weight: 400; }
+.browseEntitybyFunction #nav-women { font-weight: 400; }
+.browseEntitybyType-Essay #nav-women { font-weight: 400; }
+.browseEntitybyType-Essay #nav-occupations { font-weight: 400; }
+.browseEntitybyType-Person #nav-themes { font-weight: 400; }
+.browseEntitybyType-Person #nav-occupations { font-weight: 400; }
+
+/* predefined */
+.js #nav
+{
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	max-height: 0;
+	zoom: 1;
+}
+
+#nav.opened { max-height: 9999px; }
+
+/* -----------------------------------
+37.5
+----------------------------------- */
+
+@media (min-width:37.5em)
+{
+	#nav
+	{
+		clear: both;
+		overflow: hidden;
+	}
+	
+	.lt-ie8 #nav { zoom: 1; }
+	.lt-ie7 #nav { overflow: visible; }
+	
+	#nav a
+	{
+		float: left;
+		padding: 0 20px;
+		border: 0;
+		line-height: 60px;
+	}
+	
+	/* predefined */
+	.js #nav { position: relative; }
+	.js #nav.closed { max-height: none; }
+	#nav-toggle { display: none; }
+}
